@@ -25,11 +25,10 @@ var Assets []Asset
 
 func homepage(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "Welcome to the homepage!")
-	fmt.Println("Endpoint Hit: homepage")
 }
 
 func returnAllAssets(w http.ResponseWriter, r *http.Request) {
-	fmt.Println("Endpoint Hit: returnAllAssets")
+	fmt.Println("returnAllAssets")
 	json.NewEncoder(w).Encode(Assets)
 }
 
