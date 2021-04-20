@@ -63,9 +63,13 @@ func updateAsset(w http.ResponseWriter, r *http.Request) {
 	json.Unmarshal(reqBody, &updatedEvent)
 	for i, asset := range Assets {
 		if asset.Id == key {
-			asset.Title = updatedEvent.Title
-			asset.Desc = updatedEvent.Desc
-			asset.Content = updatedEvent.Content
+			asset.AssetName = updatedEvent.AssetName
+			asset.AssetType = updatedEvent.AssetType
+			asset.AssetCode = updatedEvent.AssetCode
+			asset.CurrentPrice = updatedEvent.CurrentPrice
+			asset.PreviousPrice = updatedEvent.PreviousPrice
+			asset.CreationDate = updatedEvent.CreationDate
+			asset.UpdationDate = updatedEvent.UpdationDate
 			Assets[i] = asset
 			json.NewEncoder(w).Encode(asset)
 		}
