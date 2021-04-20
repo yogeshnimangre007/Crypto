@@ -9,7 +9,6 @@ import (
 	"io/ioutil"
 
 
-	"Users/Downloads/GoCrypto/Controller"
 	"Users/Downloads/GoCrypto/Model"
 	"github.com/gorilla/mux"
 	"github.com/dgrijalva/jwt-go"
