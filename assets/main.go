@@ -29,5 +29,9 @@ func handleRequest() {
 //main function which will kick off our API.
 func main() {
 	fmt.Println("crypto")
+	Assets = []Asset{
+		Asset{Id: "1", AssetName: "XRP" },
+		Asset{Id: "2", AssetName: "Bitcoin"},
+	}
 	handleRequest()
 }
