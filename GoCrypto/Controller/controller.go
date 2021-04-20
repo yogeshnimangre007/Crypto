@@ -52,7 +52,7 @@ func LoginHandler(w http.ResponseWriter, r *http.Request) {
 
 
 /*
-
+ProfileHandler Function TBD 
 */
 
 func CreateEvent(c echo.context) error {
