@@ -10,7 +10,7 @@ type User struct {
 	Email string 'json:"email"'
 	Password string 'json:"password"'
 	Assets []string 'json:"assets"'
-	Token string 'json:"token"'
+	Token string 'json:"token"'//For JWT Authentication
 	isActive bool 'json:"is_active"'
 	CreationDate time.Time 'json:"creation_date"'
 	UpdationDate time.Time 'json:"updation_date"'
